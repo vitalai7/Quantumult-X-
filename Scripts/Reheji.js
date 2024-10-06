@@ -1,8 +1,8 @@
 /*************************************
 
 项目名称：Revenuecat 系列解锁合集
-下载地址：https://too.st/AppXZ
-更新时间：2023-06-30
+下载地址：https://too.st/CollectionsAPP
+更新日期：2024-10-06
 脚本作者：chxm1023
 电报频道：https://t.me/chxm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
@@ -12,13 +12,336 @@
 [rewrite_local]
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
-^https:\/\/app-measurement\.com\/config\/app\/1?(.*?)*$ url reject
-^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/.*\/?(.*?)*$ url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/sjyz.js
 
 [mitm]
-hostname = api.revenuecat.com, app-measurement.com, firebaseremoteconfig.googleapis.com
+hostname = api.revenuecat.com
 
 *************************************/
 
 
-;var encode_version = 'jsjiami.com.v5', nbigb = '__0x101200',  __0x101200=['\x56\x6b\x68\x4d\x5a\x48\x49\x3d','\x63\x45\x52\x7a\x59\x31\x6b\x3d','\x53\x45\x74\x49\x61\x6b\x30\x3d','\x65\x6b\x5a\x50\x59\x6d\x51\x3d','\x64\x31\x64\x76\x59\x6d\x30\x3d','\x52\x33\x5a\x59\x64\x6c\x59\x3d','\x62\x57\x52\x46\x55\x55\x6b\x3d','\x64\x6d\x4a\x55\x53\x45\x51\x3d','\x53\x33\x68\x30\x52\x47\x6b\x3d','\x54\x45\x31\x4c\x51\x56\x67\x3d','\x55\x33\x5a\x78\x61\x32\x38\x3d','\x63\x47\x46\x79\x63\x32\x55\x3d','\x64\x57\x35\x6b\x5a\x57\x5a\x70\x62\x6d\x56\x6b','\x59\x6d\x39\x6b\x65\x51\x3d\x3d','\x61\x47\x56\x68\x5a\x47\x56\x79\x63\x77\x3d\x3d','\x56\x58\x4e\x6c\x63\x69\x31\x42\x5a\x32\x56\x75\x64\x41\x3d\x3d','\x64\x58\x4e\x6c\x63\x69\x31\x68\x5a\x32\x56\x75\x64\x41\x3d\x3d','\x55\x48\x4a\x6c\x62\x57\x6c\x31\x62\x51\x3d\x3d','\x59\x32\x39\x74\x4c\x6d\x78\x70\x63\x32\x68\x68\x62\x32\x68\x31\x61\x53\x35\x74\x59\x58\x52\x79\x61\x58\x68\x6a\x62\x47\x39\x6a\x61\x79\x35\x73\x61\x57\x5a\x6c\x64\x47\x6c\x74\x5a\x58\x4e\x6f\x59\x58\x4a\x70\x62\x6d\x63\x3d','\x59\x32\x68\x34\x62\x57\x49\x3d','\x59\x32\x39\x74\x4c\x6d\x78\x70\x63\x32\x68\x68\x62\x32\x68\x31\x61\x53\x35\x7a\x59\x57\x78\x6c\x63\x32\x4e\x68\x64\x43\x35\x73\x61\x57\x5a\x6c\x64\x47\x6c\x74\x5a\x51\x3d\x3d','\x59\x32\x39\x74\x4c\x6d\x78\x70\x63\x32\x68\x68\x62\x32\x68\x31\x61\x53\x35\x6a\x59\x58\x4e\x6f\x5a\x6d\x78\x76\x64\x79\x35\x73\x61\x57\x5a\x6c\x64\x47\x6c\x74\x5a\x51\x3d\x3d','\x51\x57\x52\x32\x59\x57\x35\x6a\x5a\x57\x51\x3d','\x59\x32\x39\x74\x4c\x6e\x42\x68\x62\x47\x78\x70\x5a\x33\x4a\x76\x64\x58\x41\x75\x5a\x33\x42\x30\x4d\x79\x35\x35\x5a\x57\x46\x79\x62\x48\x6c\x35\x65\x51\x3d\x3d','\x59\x32\x68\x34\x62\x57\x45\x3d','\x55\x46\x4a\x50','\x59\x32\x39\x74\x4c\x6e\x42\x31\x63\x6d\x56\x6d\x62\x33\x4a\x74\x63\x33\x52\x31\x5a\x47\x6c\x76\x4c\x6d\x52\x70\x59\x58\x4a\x35\x4c\x6e\x6c\x6c\x59\x58\x4a\x73\x65\x56\x38\x79\x4d\x44\x49\x79\x58\x33\x42\x79\x62\x32\x31\x76','\x56\x6b\x6c\x51','\x62\x47\x31\x66\x4d\x56\x38\x78\x62\x57\x39\x75\x64\x47\x67\x3d','\x63\x48\x4a\x6c\x62\x57\x6c\x31\x62\x51\x3d\x3d','\x62\x57\x5a\x66\x4d\x6a\x42\x66\x62\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x79','\x63\x48\x4a\x76','\x5a\x57\x46\x7a\x65\x57\x4e\x73\x61\x57\x4e\x72\x5a\x58\x49\x75\x63\x48\x4a\x6c\x62\x57\x6c\x31\x62\x53\x35\x6b\x61\x58\x4e\x6a\x62\x33\x56\x75\x64\x44\x49\x3d','\x61\x57\x31\x68\x5a\x32\x56\x34\x4c\x6e\x42\x79\x62\x79\x35\x70\x62\x33\x4d\x3d','\x61\x57\x31\x68\x5a\x32\x56\x34\x4c\x6e\x42\x79\x62\x79\x35\x70\x62\x33\x4d\x75\x62\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x3d','\x65\x57\x56\x68\x63\x6d\x78\x35\x58\x33\x4e\x31\x59\x6c\x39\x77\x63\x6d\x38\x3d','\x55\x48\x4a\x76\x49\x45\x46\x6a\x59\x32\x56\x7a\x63\x77\x3d\x3d','\x59\x32\x39\x74\x4c\x6e\x56\x36\x5a\x58\x4a\x76\x4c\x6e\x42\x76\x5a\x57\x30\x75\x62\x57\x39\x75\x64\x47\x67\x78','\x55\x47\x56\x79\x63\x32\x39\x75\x59\x57\x78\x43\x5a\x58\x4e\x30\x55\x48\x4a\x76\x58\x31\x6c\x6c\x59\x58\x4a\x73\x65\x51\x3d\x3d','\x59\x32\x38\x75\x59\x6d\x56\x79\x5a\x32\x56\x75\x4c\x6b\x52\x68\x63\x6d\x74\x79\x62\x32\x39\x74\x4c\x6d\x56\x75\x64\x47\x6c\x30\x62\x47\x56\x74\x5a\x57\x35\x30\x4c\x6d\x46\x73\x62\x46\x52\x76\x62\x32\x78\x7a\x51\x57\x35\x6b\x52\x6d\x6c\x73\x64\x47\x56\x79\x63\x77\x3d\x3d','\x59\x32\x38\x75\x59\x6d\x56\x79\x5a\x32\x56\x75\x4c\x6b\x52\x68\x63\x6d\x74\x79\x62\x32\x39\x74\x4c\x6e\x42\x79\x62\x32\x52\x31\x59\x33\x51\x75\x5a\x6d\x39\x79\x5a\x58\x5a\x6c\x63\x69\x35\x6c\x64\x6d\x56\x79\x65\x58\x52\x6f\x61\x57\x35\x6e','\x59\x57\x78\x73\x59\x57\x4e\x6a\x5a\x58\x4e\x7a','\x51\x32\x46\x79\x5a\x46\x42\x6f\x62\x33\x52\x76\x58\x31\x42\x79\x62\x77\x3d\x3d','\x59\x32\x39\x74\x4c\x6d\x39\x75\x5a\x58\x64\x70\x5a\x47\x64\x6c\x64\x43\x35\x32\x61\x58\x41\x3d','\x55\x47\x46\x77\x5a\x58\x4a\x66\x54\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x3d','\x59\x58\x42\x77\x4c\x6d\x5a\x30\x4c\x6b\x4a\x76\x62\x32\x74\x72\x5a\x57\x56\x77\x61\x57\x35\x6e\x4c\x6d\x78\x70\x5a\x6d\x56\x30\x61\x57\x31\x6c','\x65\x48\x6c\x36\x4c\x6d\x70\x70\x59\x57\x39\x73\x62\x32\x35\x6e\x4c\x6b\x31\x35\x56\x47\x68\x70\x62\x6d\x64\x7a\x4c\x6e\x42\x79\x62\x79\x35\x70\x62\x6d\x5a\x70\x62\x6d\x6c\x30\x65\x51\x3d\x3d','\x65\x48\x6c\x36\x4c\x6d\x70\x70\x59\x57\x39\x73\x62\x32\x35\x6e\x4c\x6d\x56\x32\x5a\x57\x35\x30\x62\x47\x6c\x75\x5a\x53\x35\x77\x63\x6d\x38\x75\x62\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x3d','\x63\x47\x6c\x77\x5a\x47\x39\x6a\x58\x33\x42\x79\x62\x31\x39\x73\x61\x57\x5a\x6c\x64\x47\x6c\x74\x5a\x51\x3d\x3d','\x5a\x6d\x4a\x66\x63\x48\x4a\x76\x58\x32\x78\x70\x5a\x6d\x56\x30\x61\x57\x31\x6c','\x59\x58\x42\x77\x63\x33\x42\x79\x5a\x57\x56\x66\x63\x48\x4a\x76\x58\x32\x78\x70\x5a\x6d\x56\x30\x61\x57\x31\x6c','\x63\x48\x4a\x76\x58\x32\x78\x70\x5a\x6d\x56\x30\x61\x57\x31\x6c','\x63\x48\x4a\x76\x58\x33\x70\x76\x62\x32\x31\x68\x59\x6d\x78\x6c','\x63\x47\x6c\x77\x64\x48\x56\x69\x5a\x56\x39\x77\x63\x6d\x39\x66\x62\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x3d','\x63\x48\x4a\x70\x64\x6d\x46\x30\x5a\x56\x39\x77\x63\x6d\x39\x66\x62\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x3d','\x59\x32\x39\x74\x4c\x6d\x31\x76\x62\x6d\x39\x6a\x63\x6d\x46\x6d\x64\x43\x35\x77\x61\x47\x39\x30\x62\x32\x4e\x73\x5a\x57\x46\x75\x5a\x58\x49\x75\x62\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x75\x4d\x51\x3d\x3d','\x62\x6d\x56\x30\x4c\x6d\x74\x68\x62\x47\x56\x70\x5a\x47\x39\x7a\x59\x32\x39\x77\x5a\x53\x35\x69\x62\x48\x56\x79\x5a\x57\x52\x70\x64\x43\x35\x77\x63\x6d\x56\x74\x61\x58\x56\x74\x4d\x51\x3d\x3d','\x64\x48\x49\x31\x58\x33\x6c\x6c\x59\x58\x4a\x73\x65\x58\x4e\x31\x59\x6e\x4e\x6a\x58\x7a\x45\x31\x5a\x47\x78\x79\x63\x31\x38\x79','\x59\x32\x39\x74\x4c\x6d\x78\x31\x61\x32\x56\x74\x5a\x57\x31\x6c\x64\x43\x35\x55\x61\x57\x31\x6c\x52\x6d\x6c\x75\x5a\x47\x56\x79\x4c\x6c\x42\x79\x5a\x57\x31\x70\x64\x57\x30\x3d','\x62\x6d\x56\x33\x55\x48\x4a\x76','\x55\x48\x4a\x76\x54\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x3d','\x59\x32\x39\x74\x4c\x6d\x35\x70\x65\x48\x64\x68\x62\x6d\x63\x75\x5a\x47\x56\x6a\x61\x58\x4e\x70\x62\x32\x34\x75\x5a\x57\x35\x30\x61\x58\x52\x73\x5a\x57\x31\x6c\x62\x6e\x52\x7a\x4c\x6e\x42\x79\x62\x77\x3d\x3d','\x59\x32\x39\x74\x4c\x6d\x35\x70\x65\x48\x64\x68\x62\x6d\x63\x75\x5a\x47\x56\x6a\x61\x58\x4e\x70\x62\x32\x34\x75\x63\x48\x4a\x76\x4c\x6d\x46\x75\x62\x6e\x56\x68\x62\x41\x3d\x3d','\x59\x32\x39\x74\x4c\x6e\x4e\x76\x65\x58\x4e\x68\x64\x57\x4e\x6c\x62\x47\x46\x69\x4c\x6d\x56\x73\x5a\x57\x31\x6c\x62\x6e\x51\x75\x62\x6d\x39\x30\x5a\x53\x35\x73\x61\x57\x5a\x6c\x64\x47\x6c\x74\x5a\x51\x3d\x3d','\x59\x32\x39\x74\x4c\x6d\x78\x72\x65\x6d\x68\x68\x62\x79\x35\x6c\x5a\x47\x6c\x30\x62\x33\x49\x75\x5a\x6e\x56\x73\x62\x41\x3d\x3d','\x55\x48\x4a\x6c\x62\x57\x6c\x31\x62\x55\x31\x76\x62\x6e\x52\x6f\x62\x48\x6b\x3d','\x64\x6d\x56\x75\x64\x48\x56\x79\x59\x53\x35\x74\x5a\x57\x52\x70\x59\x53\x35\x46\x62\x57\x46\x70\x62\x45\x31\x6c\x4c\x6e\x42\x79\x5a\x57\x31\x70\x64\x57\x30\x75\x62\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x3d','\x59\x6e\x4a\x68\x63\x33\x4d\x75\x63\x48\x4a\x76\x4c\x6d\x46\x75\x62\x6e\x56\x68\x62\x41\x3d\x3d','\x61\x47\x46\x77\x63\x48\x6c\x66\x4f\x54\x6b\x35\x58\x32\x78\x70\x5a\x6d\x56\x30\x61\x57\x31\x6c','\x59\x57\x78\x73','\x59\x32\x39\x74\x4c\x6e\x70\x70\x61\x47\x56\x75\x5a\x79\x35\x68\x63\x47\x68\x79\x62\x32\x52\x70\x64\x47\x55\x75\x62\x32\x35\x6c\x64\x47\x6c\x74\x5a\x51\x3d\x3d','\x59\x32\x39\x74\x4c\x6e\x70\x70\x61\x47\x56\x75\x5a\x79\x35\x68\x63\x47\x39\x73\x62\x47\x38\x75\x62\x32\x35\x6c\x64\x47\x6c\x74\x5a\x51\x3d\x3d','\x59\x32\x39\x74\x4c\x6e\x70\x70\x61\x47\x56\x75\x5a\x79\x35\x33\x61\x57\x52\x6e\x5a\x58\x52\x68\x63\x6e\x51\x75\x62\x32\x35\x6c\x64\x47\x6c\x74\x5a\x51\x3d\x3d','\x55\x48\x4a\x6c\x62\x57\x6c\x31\x62\x54\x45\x3d','\x59\x32\x39\x74\x4c\x6d\x46\x31\x5a\x47\x6c\x76\x62\x57\x46\x6a\x61\x79\x35\x77\x63\x6d\x56\x74\x61\x58\x56\x74\x4c\x6a\x49\x77\x4d\x6a\x49\x3d','\x53\x55\x39\x54\x58\x31\x42\x53\x54\x77\x3d\x3d','\x62\x57\x46\x73\x62\x47\x39\x6a\x58\x33\x6c\x6c\x59\x58\x4a\x73\x65\x56\x39\x32\x63\x47\x34\x3d','\x64\x32\x4e\x66\x63\x48\x4a\x76\x58\x7a\x46\x35','\x63\x33\x42\x68\x63\x6d\x74\x66\x4e\x54\x6b\x35\x4f\x56\x38\x78\x65\x56\x38\x78\x64\x7a\x41\x3d','\x5a\x33\x4a\x76\x64\x79\x35\x77\x63\x6d\x38\x3d','\x5a\x33\x4a\x76\x64\x31\x39\x73\x61\x57\x5a\x6c\x64\x47\x6c\x74\x5a\x51\x3d\x3d','\x59\x32\x38\x75\x62\x6d\x39\x30\x5a\x58\x42\x73\x59\x57\x34\x75\x63\x33\x56\x69\x63\x32\x4e\x79\x61\x58\x42\x30\x61\x57\x39\x75\x4c\x6e\x42\x6c\x63\x6e\x4e\x76\x62\x6d\x46\x73\x4c\x6d\x46\x75\x62\x6e\x56\x68\x62\x41\x3d\x3d','\x63\x47\x46\x30\x63\x6d\x39\x75','\x59\x32\x39\x74\x4c\x6d\x46\x75\x5a\x48\x6c\x33\x62\x33\x4a\x72\x63\x79\x35\x33\x5a\x57\x46\x30\x61\x47\x56\x79\x4c\x6e\x6c\x6c\x59\x58\x4a\x73\x65\x56\x42\x68\x64\x48\x4a\x76\x62\x67\x3d\x3d','\x59\x32\x39\x74\x4c\x6d\x4a\x73\x64\x57\x56\x7a\x61\x57\x64\x75\x64\x57\x30\x75\x61\x47\x46\x79\x64\x57\x74\x76\x62\x6d\x63\x75\x62\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x75\x63\x48\x4a\x6c\x62\x57\x6c\x31\x62\x51\x3d\x3d','\x52\x57\x35\x30\x61\x58\x52\x73\x5a\x57\x31\x6c\x62\x6e\x51\x75\x55\x48\x4a\x76','\x64\x47\x56\x6a\x61\x43\x35\x74\x61\x57\x6c\x6b\x61\x57\x6b\x75\x54\x55\x52\x44\x62\x47\x39\x6a\x61\x79\x35\x7a\x64\x57\x4a\x7a\x59\x33\x4a\x70\x63\x48\x52\x70\x62\x32\x34\x75\x62\x57\x39\x75\x64\x47\x67\x3d','\x64\x47\x56\x6a\x61\x43\x35\x74\x61\x57\x6c\x6b\x61\x57\x6b\x75\x62\x32\x5a\x6d\x63\x32\x4e\x79\x5a\x57\x56\x75\x4c\x6e\x42\x79\x62\x77\x3d\x3d','\x64\x47\x56\x6a\x61\x43\x35\x74\x61\x57\x6c\x6b\x61\x57\x6b\x75\x54\x55\x52\x57\x61\x57\x35\x35\x62\x43\x35\x73\x61\x57\x5a\x6c\x64\x47\x6c\x74\x5a\x51\x3d\x3d','\x64\x47\x56\x6a\x61\x43\x35\x74\x61\x57\x6c\x6b\x61\x57\x6b\x75\x54\x55\x52\x44\x62\x47\x39\x6a\x61\x79\x35\x77\x63\x6d\x38\x3d','\x59\x32\x39\x74\x4c\x6d\x68\x68\x63\x48\x42\x35\x5a\x47\x39\x6e\x64\x47\x56\x68\x62\x53\x35\x79\x5a\x57\x78\x68\x65\x43\x35\x73\x61\x57\x5a\x6c\x64\x47\x6c\x74\x5a\x56\x42\x79\x62\x77\x3d\x3d','\x59\x32\x39\x74\x4c\x6d\x74\x70\x62\x57\x56\x75\x4c\x6d\x46\x77\x64\x48\x5a\x77\x63\x6d\x38\x75\x62\x47\x6c\x6d\x5a\x58\x52\x70\x62\x57\x55\x3d','\x59\x32\x4d\x75\x59\x57\x35\x35\x59\x6d\x39\x34\x4c\x6b\x46\x75\x65\x57\x4a\x76\x65\x43\x35\x68\x62\x6d\x35\x31\x59\x57\x77\x3d','\x63\x47\x78\x31\x63\x77\x3d\x3d','\x59\x32\x39\x74\x4c\x6d\x4e\x6f\x65\x47\x30\x78\x4d\x44\x49\x30\x4c\x6e\x42\x79\x5a\x57\x31\x70\x64\x57\x30\x75\x65\x57\x56\x68\x63\x6d\x78\x35','\x59\x32\x39\x74\x4c\x6d\x35\x6c\x65\x57\x4a\x76\x65\x43\x35\x77\x61\x57\x78\x73\x62\x33\x63\x75\x63\x48\x4a\x6c\x62\x57\x6c\x31\x62\x53\x35\x35\x5a\x57\x46\x79','\x5a\x6e\x56\x73\x62\x43\x31\x32\x5a\x58\x4a\x7a\x61\x57\x39\x75','\x64\x47\x46\x70\x62\x31\x38\x78\x4e\x6a\x55\x78\x58\x7a\x46\x35\x58\x7a\x4a\x33\x4d\x46\x39\x7a\x64\x47\x52\x66\x64\x6a\x49\x3d','\x55\x48\x4a\x76','\x63\x48\x4a\x76\x58\x32\x46\x75\x62\x6e\x56\x68\x62\x41\x3d\x3d','\x59\x32\x39\x74\x4c\x6e\x70\x70\x61\x47\x56\x75\x5a\x79\x35\x30\x62\x33\x52\x76\x64\x32\x46\x73\x62\x47\x56\x30\x4c\x6d\x39\x75\x5a\x58\x52\x70\x62\x57\x56\x77\x64\x58\x4a\x6a\x61\x47\x46\x7a\x5a\x51\x3d\x3d','\x59\x6d\x78\x76\x59\x32\x74\x6c\x63\x69\x35\x70\x62\x33\x4d\x75\x63\x33\x56\x69\x63\x32\x4e\x79\x61\x58\x42\x30\x61\x57\x39\x75\x4c\x6e\x6c\x6c\x59\x58\x4a\x73\x65\x51\x3d\x3d','\x64\x6e\x4e\x6a\x62\x33\x42\x79\x62\x31\x39\x6e\x62\x47\x39\x69\x59\x57\x78\x66\x4e\x54\x6b\x35\x4f\x56\x39\x68\x62\x6d\x35\x31\x59\x57\x78\x66\x4e\x30\x52\x66\x5a\x6e\x4a\x6c\x5a\x51\x3d\x3d','\x65\x43\x31\x79\x5a\x58\x5a\x6c\x62\x6e\x56\x6c\x59\x32\x46\x30\x4c\x57\x56\x30\x59\x57\x63\x3d','\x57\x43\x31\x53\x5a\x58\x5a\x6c\x62\x6e\x56\x6c\x51\x32\x46\x30\x4c\x55\x56\x55\x59\x57\x63\x3d','\x63\x33\x56\x69\x63\x32\x4e\x79\x61\x57\x4a\x6c\x63\x67\x3d\x3d','\x63\x33\x56\x69\x63\x32\x4e\x79\x61\x58\x42\x30\x61\x57\x39\x75\x63\x77\x3d\x3d','\x5a\x57\x35\x30\x61\x58\x52\x73\x5a\x57\x31\x6c\x62\x6e\x51\x3d','\x64\x47\x56\x7a\x64\x41\x3d\x3d','\x61\x57\x35\x6b\x5a\x58\x68\x50\x5a\x67\x3d\x3d','\x59\x32\x68\x34\x62\x54\x45\x77\x4d\x6a\x4d\x3d','\x61\x48\x52\x30\x63\x48\x4d\x36\x4c\x79\x39\x30\x4c\x6d\x31\x6c\x4c\x32\x4e\x6f\x65\x47\x30\x78\x4d\x44\x49\x7a','\x35\x4c\x75\x46\x35\x4c\x36\x62\x35\x61\x32\x6d\x35\x4c\x6d\x67\x37\x37\x79\x4d\x35\x36\x61\x42\x35\x71\x32\x69\x36\x4c\x32\x73\x36\x4c\x32\x39\x35\x6f\x69\x57\x35\x5a\x53\x75\x35\x59\x32\x57','\x4d\x6a\x41\x79\x4d\x69\x30\x77\x4f\x53\x30\x77\x4f\x56\x51\x77\x4f\x54\x6f\x77\x4f\x54\x6f\x77\x4f\x56\x6f\x3d','\x4d\x6a\x41\x35\x4f\x53\x30\x77\x4f\x53\x30\x77\x4f\x56\x51\x77\x4f\x54\x6f\x77\x4f\x54\x6f\x77\x4f\x56\x6f\x3d','\x55\x46\x56\x53\x51\x30\x68\x42\x55\x30\x56\x45','\x5a\x57\x35\x30\x61\x58\x52\x73\x5a\x57\x31\x6c\x62\x6e\x52\x7a','\x62\x6d\x46\x74\x5a\x51\x3d\x3d','\x63\x33\x52\x79\x61\x57\x35\x6e\x61\x57\x5a\x35','\x63\x48\x4a\x76\x5a\x48\x56\x6a\x64\x46\x39\x70\x5a\x47\x56\x75\x64\x47\x6c\x6d\x61\x57\x56\x79','\x61\x47\x4e\x36','\x52\x6d\x64\x49','\x5a\x58\x4a\x30','\x61\x6e\x4e\x71\x61\x57\x46\x74\x61\x53\x35\x6a\x62\x32\x30\x75\x64\x6a\x55\x3d','\x35\x34\x6d\x49\x35\x70\x79\x73\x35\x59\x2b\x33\x37\x37\x79\x4d\x61\x6e\x50\x6b\x76\x4a\x72\x6c\x72\x70\x72\x6d\x6e\x4a\x2f\x6c\x76\x4c\x6e\x6e\x71\x70\x66\x76\x76\x49\x7a\x6f\x76\x35\x6a\x6f\x72\x37\x66\x6d\x6c\x4b\x2f\x6d\x6a\x49\x48\x6d\x69\x4a\x48\x6b\x75\x36\x7a\x6e\x6d\x6f\x54\x6c\x74\x36\x58\x6b\x76\x5a\x77\x3d','\x35\x59\x69\x67\x36\x5a\x6d\x6b\x35\x34\x6d\x49\x35\x70\x79\x73\x35\x59\x2b\x33\x37\x37\x79\x4d\x61\x6e\x50\x6b\x76\x4a\x72\x6c\x72\x70\x72\x6d\x6e\x4a\x2f\x6c\x76\x4c\x6e\x6e\x71\x70\x63\x3d','\x64\x57\x74\x44\x55\x31\x4d\x3d'];(function(_0x2182db,_0x1441cc){var _0x2792b4=function(_0x21019d){while(--_0x21019d){_0x2182db['push'](_0x2182db['shift']());}};var _0x325225=function(){var _0x290757={'data':{'key':'cookie','value':'timeout'},'setCookie':function(_0xa9ff43,_0x589169,_0x4753aa,_0x46a875){_0x46a875=_0x46a875||{};var _0x528cc7=_0x589169+'='+_0x4753aa;var _0x2d3fc1=0x0;for(var _0x2d3fc1=0x0,_0x34b6fb=_0xa9ff43['length'];_0x2d3fc1<_0x34b6fb;_0x2d3fc1++){var _0x2e96d9=_0xa9ff43[_0x2d3fc1];_0x528cc7+=';\x20'+_0x2e96d9;var _0xe5ffc1=_0xa9ff43[_0x2e96d9];_0xa9ff43['push'](_0xe5ffc1);_0x34b6fb=_0xa9ff43['length'];if(_0xe5ffc1!==!![]){_0x528cc7+='='+_0xe5ffc1;}}_0x46a875['cookie']=_0x528cc7;},'removeCookie':function(){return'dev';},'getCookie':function(_0x56a7e8,_0x2b4da2){_0x56a7e8=_0x56a7e8||function(_0x2adac9){return _0x2adac9;};var _0x4473c8=_0x56a7e8(new RegExp('(?:^|;\x20)'+_0x2b4da2['replace'](/([.$?*|{}()[]\/+^])/g,'$1')+'=([^;]*)'));var _0x15e3b2=function(_0x536117,_0x3181e9){_0x536117(++_0x3181e9);};_0x15e3b2(_0x2792b4,_0x1441cc);return _0x4473c8?decodeURIComponent(_0x4473c8[0x1]):undefined;}};var _0x1d17b7=function(){var _0x56ebb3=new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');return _0x56ebb3['test'](_0x290757['removeCookie']['toString']());};_0x290757['updateCookie']=_0x1d17b7;var _0x1e0b7e='';var _0x199a5d=_0x290757['updateCookie']();if(!_0x199a5d){_0x290757['setCookie'](['*'],'counter',0x1);}else if(_0x199a5d){_0x1e0b7e=_0x290757['getCookie'](null,'counter');}else{_0x290757['removeCookie']();}};_0x325225();}(__0x101200,0x8a));var _0x60d9=function(_0x29a49e,_0x4755fd){_0x29a49e=_0x29a49e-0x0;var _0x46ac7e=__0x101200[_0x29a49e];if(_0x60d9['initialized']===undefined){(function(){var _0x45daed=typeof window!=='undefined'?window:typeof process==='object'&&typeof require==='function'&&typeof global==='object'?global:this;var _0x42328f='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x45daed['atob']||(_0x45daed['atob']=function(_0x330062){var _0x101c08=String(_0x330062)['replace'](/=+$/,'');for(var _0xf6412e=0x0,_0x2fc221,_0x59c739,_0x365f5e=0x0,_0xfd8b62='';_0x59c739=_0x101c08['charAt'](_0x365f5e++);~_0x59c739&&(_0x2fc221=_0xf6412e%0x4?_0x2fc221*0x40+_0x59c739:_0x59c739,_0xf6412e++%0x4)?_0xfd8b62+=String['fromCharCode'](0xff&_0x2fc221>>(-0x2*_0xf6412e&0x6)):0x0){_0x59c739=_0x42328f['indexOf'](_0x59c739);}return _0xfd8b62;});}());_0x60d9['base64DecodeUnicode']=function(_0x377774){var _0x1563a2=atob(_0x377774);var _0x2cbbb8=[];for(var _0x24ac68=0x0,_0x7f35df=_0x1563a2['length'];_0x24ac68<_0x7f35df;_0x24ac68++){_0x2cbbb8+='%'+('00'+_0x1563a2['charCodeAt'](_0x24ac68)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2cbbb8);};_0x60d9['data']={};_0x60d9['initialized']=!![];}var _0x1f33c3=_0x60d9['data'][_0x29a49e];if(_0x1f33c3===undefined){var _0x878f08=function(_0x4b6b39){this['rc4Bytes']=_0x4b6b39;this['states']=[0x1,0x0,0x0];this['newState']=function(){return'newState';};this['firstState']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*';this['secondState']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x878f08['prototype']['checkState']=function(){var _0x44d66f=new RegExp(this['firstState']+this['secondState']);return this['runState'](_0x44d66f['test'](this['newState']['toString']())?--this['states'][0x1]:--this['states'][0x0]);};_0x878f08['prototype']['runState']=function(_0x4ebffd){if(!Boolean(~_0x4ebffd)){return _0x4ebffd;}return this['getState'](this['rc4Bytes']);};_0x878f08['prototype']['getState']=function(_0xd86237){for(var _0x1c7c15=0x0,_0x301f48=this['states']['length'];_0x1c7c15<_0x301f48;_0x1c7c15++){this['states']['push'](Math['round'](Math['random']()));_0x301f48=this['states']['length'];}return _0xd86237(this['states'][0x0]);};new _0x878f08(_0x60d9)['checkState']();_0x46ac7e=_0x60d9['base64DecodeUnicode'](_0x46ac7e);_0x60d9['data'][_0x29a49e]=_0x46ac7e;}else{_0x46ac7e=_0x1f33c3;}return _0x46ac7e;};const _0x19fd75={};const _0x2dfd86=JSON[_0x60d9('0x0')](typeof $response!=_0x60d9('0x1')&&$response[_0x60d9('0x2')]||null);const _0x4d3838=$request[_0x60d9('0x3')][_0x60d9('0x4')]||$request[_0x60d9('0x3')][_0x60d9('0x5')];const _0x21c6ec={'MatrixClock':{'name':_0x60d9('0x6'),'id':_0x60d9('0x7'),'cm':_0x60d9('0x8')},'SalesCat':{'name':_0x60d9('0x6'),'id':_0x60d9('0x9'),'cm':_0x60d9('0x8')},'MoneyThings':{'name':_0x60d9('0x6'),'id':_0x60d9('0xa'),'cm':_0x60d9('0x8')},'ChatGPTApp':{'name':_0x60d9('0xb'),'id':_0x60d9('0xc'),'cm':_0x60d9('0xd')},'Journal_iOS':{'name':_0x60d9('0xe'),'id':_0x60d9('0xf'),'cm':_0x60d9('0xd')},'LemonKeepAccounts':{'name':_0x60d9('0x10'),'id':_0x60d9('0x11'),'cm':_0x60d9('0xd')},'mizframa':{'name':_0x60d9('0x12'),'id':_0x60d9('0x13'),'cm':_0x60d9('0x8')},'EasyClicker':{'name':_0x60d9('0x14'),'id':_0x60d9('0x15'),'cm':_0x60d9('0x8')},'ImageX':{'name':_0x60d9('0x16'),'id':_0x60d9('0x17'),'cm':_0x60d9('0x8')},'image_upscaler':{'name':_0x60d9('0x14'),'id':_0x60d9('0x18'),'cm':_0x60d9('0xd')},'DayPoem':{'name':_0x60d9('0x19'),'id':_0x60d9('0x1a'),'cm':_0x60d9('0xd')},'Personal%20Best':{'name':_0x60d9('0x14'),'id':_0x60d9('0x1b'),'cm':_0x60d9('0xd')},'Darkroom':{'name':_0x60d9('0x1c'),'id':_0x60d9('0x1d'),'cm':_0x60d9('0xd')},'CardPhoto':{'name':_0x60d9('0x1e'),'id':_0x60d9('0x1f'),'cm':_0x60d9('0x8')},'OneWidget':{'name':_0x60d9('0x1e'),'id':_0x60d9('0x20'),'cm':_0x60d9('0x8')},'PinPaper':{'name':_0x60d9('0x1e'),'id':_0x60d9('0x21'),'cm':_0x60d9('0x8')},'Cookie':{'name':_0x60d9('0x1e'),'id':_0x60d9('0x22'),'cm':_0x60d9('0x8')},'MyThings':{'name':_0x60d9('0x14'),'id':_0x60d9('0x23'),'cm':_0x60d9('0x8')},'%E4%BA%8B%E7%BA%BF':{'name':_0x60d9('0x14'),'id':_0x60d9('0x24'),'cm':_0x60d9('0x8')},'PipDoc':{'name':_0x60d9('0x14'),'id':_0x60d9('0x25'),'cm':_0x60d9('0x8')},'Facebook':{'name':_0x60d9('0x14'),'id':_0x60d9('0x26'),'cm':_0x60d9('0x8')},'Free':{'name':_0x60d9('0x14'),'id':_0x60d9('0x27'),'cm':_0x60d9('0x8')},'Startodo':{'name':_0x60d9('0x14'),'id':_0x60d9('0x28'),'cm':_0x60d9('0x8')},'Browser':{'name':_0x60d9('0x14'),'id':_0x60d9('0x29'),'cm':_0x60d9('0x8')},'YubePiP':{'name':_0x60d9('0x14'),'id':_0x60d9('0x2a'),'cm':_0x60d9('0x8')},'PrivateBrowser':{'name':_0x60d9('0x14'),'id':_0x60d9('0x2b'),'cm':_0x60d9('0x8')},'Photo%20Cleaner':{'name':_0x60d9('0x12'),'id':_0x60d9('0x2c'),'cm':_0x60d9('0x8')},'bluredit':{'name':_0x60d9('0x6'),'id':_0x60d9('0x2d'),'cm':_0x60d9('0xd')},'TouchRetouchBasic':{'name':_0x60d9('0x12'),'id':_0x60d9('0x2e'),'cm':_0x60d9('0xd')},'TimeFinder':{'name':_0x60d9('0x14'),'id':_0x60d9('0x2f'),'cm':_0x60d9('0x8')},'Alpenglow':{'name':_0x60d9('0x30'),'id':_0x60d9('0x31'),'cm':_0x60d9('0xd')},'Decision':{'name':_0x60d9('0x32'),'id':_0x60d9('0x33'),'cm':_0x60d9('0xd')},'ElementNote':{'name':_0x60d9('0x14'),'id':_0x60d9('0x34'),'cm':_0x60d9('0x8')},'Noto%20%E7%AC%94%E8%AE%B0':{'name':_0x60d9('0x14'),'id':_0x60d9('0x35'),'cm':_0x60d9('0xd')},'Tangerine':{'name':_0x60d9('0x6'),'id':_0x60d9('0x36'),'cm':_0x60d9('0xd')},'Email%20Me':{'name':_0x60d9('0x12'),'id':_0x60d9('0x37'),'cm':_0x60d9('0x8')},'Brass':{'name':_0x60d9('0x14'),'id':_0x60d9('0x38'),'cm':_0x60d9('0xd')},'Happy%3ADays':{'name':_0x60d9('0x14'),'id':_0x60d9('0x39'),'cm':_0x60d9('0x8')},'Aphrodite':{'name':_0x60d9('0x3a'),'id':_0x60d9('0x3b'),'cm':_0x60d9('0x8')},'apollo':{'name':_0x60d9('0x3a'),'id':_0x60d9('0x3c'),'cm':_0x60d9('0x8')},'widget_art':{'name':_0x60d9('0x3a'),'id':_0x60d9('0x3d'),'cm':_0x60d9('0x8')},'audiomack-iphone':{'name':_0x60d9('0x3e'),'id':_0x60d9('0x3f'),'cm':_0x60d9('0xd')},'MallocVPN':{'name':_0x60d9('0x40'),'id':_0x60d9('0x41'),'cm':_0x60d9('0xd')},'WhiteCloud':{'name':_0x60d9('0x1e'),'id':_0x60d9('0x42'),'cm':_0x60d9('0xd')},'Spark':{'name':_0x60d9('0x12'),'id':_0x60d9('0x43'),'cm':_0x60d9('0xd')},'Grow':{'name':_0x60d9('0x44'),'id':_0x60d9('0x45'),'cm':_0x60d9('0x8')},'NotePlan':{'name':_0x60d9('0x12'),'id':_0x60d9('0x46'),'cm':_0x60d9('0xd')},'simple-weather':{'name':_0x60d9('0x47'),'id':_0x60d9('0x48'),'cm':_0x60d9('0xd')},'streaks':{'name':_0x60d9('0x47'),'id':_0x60d9('0x48'),'cm':_0x60d9('0xd')},'andyworks-calculator':{'name':_0x60d9('0x47'),'id':_0x60d9('0x48'),'cm':_0x60d9('0xd')},'simple-timer':{'name':_0x60d9('0x47'),'id':_0x60d9('0x48'),'cm':_0x60d9('0xd')},'Harukong':{'name':_0x60d9('0x12'),'id':_0x60d9('0x49'),'cm':_0x60d9('0x8')},'UTC':{'name':_0x60d9('0x4a'),'id':_0x60d9('0x4b'),'cm':_0x60d9('0xd')},'OffScreen':{'name':_0x60d9('0x4a'),'id':_0x60d9('0x4c'),'cm':_0x60d9('0x8')},'%E8%B0%9C%E5%BA%95%E9%BB%91%E8%83%B6':{'name':_0x60d9('0x4a'),'id':_0x60d9('0x4d'),'cm':_0x60d9('0xd')},'%E8%B0%9C%E5%BA%95%E6%97%B6%E9%92%9F':{'name':_0x60d9('0x4a'),'id':_0x60d9('0x4e'),'cm':_0x60d9('0x8')},'%E7%9B%AE%E6%A0%87%E5%9C%B0%E5%9B%BE':{'name':_0x60d9('0x14'),'id':_0x60d9('0x4f'),'cm':_0x60d9('0x8')},'APTV':{'name':_0x60d9('0x14'),'id':_0x60d9('0x50'),'cm':_0x60d9('0x8')},'Anybox':{'name':_0x60d9('0x14'),'id':_0x60d9('0x51'),'cm':_0x60d9('0xd')},'ScannerPro':{'name':_0x60d9('0x52'),'id':_0x60d9('0x53'),'cm':_0x60d9('0xd')},'Pillow':{'name':_0x60d9('0x12'),'id':_0x60d9('0x54'),'cm':_0x60d9('0xd')},'Taio':{'name':_0x60d9('0x55'),'id':_0x60d9('0x56'),'cm':_0x60d9('0xd')},'CPUMonitor':{'name':_0x60d9('0x57'),'id':_0x60d9('0x58'),'cm':_0x60d9('0xd')},'totowallet':{'name':_0x60d9('0x3a'),'id':_0x60d9('0x59'),'cm':_0x60d9('0x8')},'1Blocker':{'name':_0x60d9('0x12'),'id':_0x60d9('0x5a'),'cm':_0x60d9('0xd')},'VSCO':{'name':_0x60d9('0x14'),'id':_0x60d9('0x5b'),'cm':_0x60d9('0xd')}};if(typeof $response==_0x60d9('0x1')){delete $request[_0x60d9('0x3')][_0x60d9('0x5c')];delete $request[_0x60d9('0x3')][_0x60d9('0x5d')];_0x19fd75[_0x60d9('0x3')]=$request[_0x60d9('0x3')];}else if(_0x2dfd86&&_0x2dfd86[_0x60d9('0x5e')]){_0x2dfd86[_0x60d9('0x5e')][_0x60d9('0x5f')]=_0x2dfd86[_0x60d9('0x5e')][_0x60d9('0x5f')]||{};_0x2dfd86[_0x60d9('0x5e')][_0x60d9('0x60')]=_0x2dfd86[_0x60d9('0x5e')][_0x60d9('0x60')]||{};for(const _0x131d59 in _0x21c6ec){if(new RegExp('\x5e'+_0x131d59,'\x69')[_0x60d9('0x61')](_0x4d3838)){if(_0x21c6ec[_0x131d59]['\x63\x6d'][_0x60d9('0x62')](_0x60d9('0xd'))!=-0x1){data={'Author':_0x60d9('0x63'),'Telegram':_0x60d9('0x64'),'warning':_0x60d9('0x65'),'original_purchase_date':_0x60d9('0x66'),'purchase_date':_0x60d9('0x66'),'expires_date':_0x60d9('0x67'),'ownership_type':_0x60d9('0x68')};}if(_0x21c6ec[_0x131d59]['\x63\x6d'][_0x60d9('0x62')](_0x60d9('0x8'))!=-0x1){data={'Author':_0x60d9('0x63'),'Telegram':_0x60d9('0x64'),'warning':_0x60d9('0x65'),'original_purchase_date':_0x60d9('0x66'),'purchase_date':_0x60d9('0x66'),'ownership_type':_0x60d9('0x68')};}_0x2dfd86[_0x60d9('0x5e')][_0x60d9('0x5f')][_0x21c6ec[_0x131d59]['\x69\x64']]=data;_0x2dfd86[_0x60d9('0x5e')][_0x60d9('0x69')][_0x21c6ec[_0x131d59][_0x60d9('0x6a')]]=JSON[_0x60d9('0x0')](JSON[_0x60d9('0x6b')](data));_0x2dfd86[_0x60d9('0x5e')][_0x60d9('0x69')][_0x21c6ec[_0x131d59][_0x60d9('0x6a')]][_0x60d9('0x6c')]=_0x21c6ec[_0x131d59]['\x69\x64'];break;}}_0x19fd75[_0x60d9('0x2')]=JSON[_0x60d9('0x6b')](_0x2dfd86);}$done(_0x19fd75);;(function(_0x2705be,_0x57b479,_0x1da653){var _0x2f6f64=function(){var _0x52885d=!![];return function(_0x38f224,_0x2ce385){var _0x27e4e4=_0x52885d?function(){if(_0x2ce385){var _0x3f3d48=_0x2ce385['apply'](_0x38f224,arguments);_0x2ce385=null;return _0x3f3d48;}}:function(){};_0x52885d=![];return _0x27e4e4;};}();var _0x28b5ad=_0x2f6f64(this,function(){var _0x30b7ed=function(){return'\x64\x65\x76';},_0x2d92f3=function(){return'\x77\x69\x6e\x64\x6f\x77';};var _0xf66e59=function(){var _0x585da1=new RegExp('\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d');return!_0x585da1['\x74\x65\x73\x74'](_0x30b7ed['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0x1f4c45=function(){var _0x11c26d=new RegExp('\x28\x5c\x5c\x5b\x78\x7c\x75\x5d\x28\x5c\x77\x29\x7b\x32\x2c\x34\x7d\x29\x2b');return _0x11c26d['\x74\x65\x73\x74'](_0x2d92f3['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0xfcf49f=function(_0x4426fe){var _0x11109e=~-0x1>>0x1+0xff%0x0;if(_0x4426fe['\x69\x6e\x64\x65\x78\x4f\x66']('\x69'===_0x11109e)){_0x52bf99(_0x4426fe);}};var _0x52bf99=function(_0x21a03e){var _0x1d2dd3=~-0x4>>0x1+0xff%0x0;if(_0x21a03e['\x69\x6e\x64\x65\x78\x4f\x66']((!![]+'')[0x3])!==_0x1d2dd3){_0xfcf49f(_0x21a03e);}};if(!_0xf66e59()){if(!_0x1f4c45()){_0xfcf49f('\x69\x6e\x64\u0435\x78\x4f\x66');}else{_0xfcf49f('\x69\x6e\x64\x65\x78\x4f\x66');}}else{_0xfcf49f('\x69\x6e\x64\u0435\x78\x4f\x66');}});_0x28b5ad();var _0x27300e={'ukCSS':function _0x49d8df(_0x5acc5c,_0x4892fb){return _0x5acc5c!==_0x4892fb;},'VHLdr':_0x60d9('0x6d'),'pDscY':_0x60d9('0x6e'),'HKHjM':_0x60d9('0x6f'),'zFObd':_0x60d9('0x1'),'wWobm':function _0x3b9f92(_0x139163,_0x3a477e){return _0x139163===_0x3a477e;},'GvXvV':_0x60d9('0x70'),'mdEQI':function _0x35f766(_0x216c9a,_0x9e5133){return _0x216c9a+_0x9e5133;},'vbTHD':_0x60d9('0x71'),'KxtDi':function _0xa32ed9(_0x312d92,_0x57b8e2){return _0x312d92!==_0x57b8e2;},'LMKAX':function _0x59c188(_0x260e52,_0x10cf1a){return _0x260e52+_0x10cf1a;},'Svqko':_0x60d9('0x72')};_0x1da653='\x61\x6c';try{if(_0x27300e[_0x60d9('0x73')](_0x27300e[_0x60d9('0x74')],_0x27300e[_0x60d9('0x75')])){_0x1da653+=_0x27300e[_0x60d9('0x76')];_0x57b479=encode_version;if(!(_0x27300e[_0x60d9('0x73')](typeof _0x57b479,_0x27300e[_0x60d9('0x77')])&&_0x27300e[_0x60d9('0x78')](_0x57b479,_0x27300e[_0x60d9('0x79')]))){_0x2705be[_0x1da653](_0x27300e[_0x60d9('0x7a')]('\u5220\u9664',_0x27300e[_0x60d9('0x7b')]));}}else{_0x1da653='\x61\x6c';try{_0x1da653+=_0x27300e[_0x60d9('0x76')];_0x57b479=encode_version;if(!(_0x27300e[_0x60d9('0x7c')](typeof _0x57b479,_0x27300e[_0x60d9('0x77')])&&_0x27300e[_0x60d9('0x78')](_0x57b479,_0x27300e[_0x60d9('0x79')]))){_0x2705be[_0x1da653](_0x27300e[_0x60d9('0x7d')]('\u5220\u9664',_0x27300e[_0x60d9('0x7b')]));}}catch(_0x21882a){_0x2705be[_0x1da653](_0x27300e[_0x60d9('0x7e')]);}}}catch(_0x5587cd){_0x2705be[_0x1da653](_0x27300e[_0x60d9('0x7e')]);}}(window));;encode_version = 'jsjiami.com.v5';
+const chxm1024 = {};
+const headers = $request.headers;
+const chxm1023 = JSON.parse(typeof $response != "undefined" && $response.body || null);
+const ua = headers['User-Agent'] || headers['user-agent'];
+const bundle_id = headers['X-Client-Bundle-ID'] || headers['x-client-bundle-id'];
+
+//排除已禁止MITM的APP
+const forbiddenApps = ['Fileball', 'APTV'];
+const forbiddenAppFound = forbiddenApps.find(appName => (ua && ua.includes(appName)) || ($request.body && $request.body.includes(appName)));
+if (forbiddenAppFound) {
+  console.log(`发现禁止MITM的APP: ${forbiddenAppFound}，已停止运行脚本！\n叮当猫の分享频道: https://t.me/chxm1023`);
+  $done({});
+}
+
+//识别bundle_id
+const bundle = {
+  'tech.miidii.MDClock': { name: 'Entitlement.Pro', id: 'tech.miidii.MDClock.pro', cm: 'sjb' },  //谜底时钟
+  'com.voicedream.Voic': { name: 'standard', id: 'vd_annual_79_3daytrial', cm: 'sja' },  //声之梦
+  'com.laser-focused.focus-ios': { name: 'subscribed', id: 'iap.io.masterbuilders.focus.pro_one_year', cm: 'sja' },  //Focus-专注时间管理
+  'net.tengl.powertimer': { name: 'plus', id: 'powertimer.plus', cm: 'sjb' },  //元气计时-PowerTimer
+  'com.reader.book': { name: 'pro', id: 'com.reader.permanentlyPro', cm: 'sjb' },  //PureLibro
+  'app.imone.OneWidget': { name: 'pro', id: 'app.imone.OneWidget.Lifetime', cm: 'sjb' },  //OneWidget-小组件
+  'io.innerpeace.yiye': { name: 'Premium', id: 'io.innerpeace.yiye.lifetime.forYearly', cm: 'sja' },  //言外笔记
+  'com.skysoft.removalfree': { name: 'Pro', id: 'com.skysoft.removalfree.subscription.newyearly', cm: 'sja' }  //图片消除
+}
+
+//识别UA
+const list = {
+  'ChatLLM': { name: 'Pro', id: 'com.curiouscreatorsco.ChatLLM.pro.lifetime.notrial.150_00', cm: 'sjb' },  //AItText
+  'Binsoo': { name: 'vibe', id: 'annual', cm: 'sja' },  //Binsoo-照片滤镜/编辑
+  'Photoooo': { name: 'lifetime', id: 'canoe_28_rnb_forever', cm: 'sjb' },  //Phorase-专业AI消除助手
+  'VibeCamera': { name: 'forever', id: 'vibe_pro_forever', cm: 'sjb' },  //VIBECAM-相机
+  'No%20Fusion': { name: 'LivePhoto', id: 'com.grey.nofusion.livephoto', cm: 'sjb' },  //NoFusion-相机
+  'Themy': { name: 'fonts_premium', id: 'lifetime', cm: 'sjb' },  //Fonts-微信字体
+  'BabyCare': { name: 'pro', id: 'KiddoKeeper_38_LifeTime', cm: 'sjb' },  //小守护
+  'ElonAI': { name: 'premium', id: 'elongpt.yearly_1', cm: 'sja' },  //ElonAI
+  'Dumb%20Phone': { name: 'Pro', id: 'dp.lifetime_19.99', cm: 'sjb' },  //DumbPhone(°)
+  'maple_mobile': { name: 'premium', id: 'mc_3000_12m', cm: 'sja' },  //Maple Calculator-计算器
+  'FujiLifeStyle': { name: 'FUJIStyle Pro(Year)', id: 'FujiStyle2024003', cm: 'sja' },  //FUJISTYLE-富士色彩配方
+  'Gentler': { name: 'premium', id: 'app.gentler.activity.nonconsumable.onetime1', cm: 'sjb' },  //Gentler Streak-健康助手
+  'TuneTally': { name: 'Pro', id: 'tunetally_pro', cm: 'sjb' },  //TuneTally-综合音乐排行
+  'Utiful': { name: 'All Access', id: 'All_Access_YR_12M_Free', cm: 'sja' },  //Utiful-相册管家
+  'CharingCrossRoad': { name: 'ready_pro', id: 'ready_pro_50_1y', cm: 'sja' },  //读否-稍后阅读
+  'ig-bookmarker': { name: 'entitlement', id: 'lifetimeID', cm: 'sjb' },  //instDown-ins下载工具
+  'PhotoMapper': { name: 'premium', id: 'photomapper_lifetime_1.99', cm: 'sjb' },  //PhotoMapper-照片位置追改
+  'CallAnnie': { name: 'ai.animato.callannie.entitlement.pro0', id: 'ai.animato.callannie.proyearly1', cm: 'sja' },  //CallAnnie
+  'OneMockup': { name: 'pro', id: 'online.ohwe.onescreen.Lifetime', cm: 'sja' },  //OneMockup-带壳截屏
+  'DataCalc': { name: 'datacalc.pro', id: 'datacalc.yearly.12', cm: 'sja' },  //DataCalc-素材容量计算
+  'moss-ios': { name: 'prouser', id: 'dpbox_yearly_68', cm: 'sja' },  //DPBOX-摄影机与电影参数参数查询
+  'Law': { name: 'vip', id: 'LawVIPOneYear', cm: 'sja' },  //中国法律
+  'SleepSounds': { name: 'vip', id: 'VIPOneMonth', cm: 'sja' },  //睡眠音乐
+  'multitimer_app': { name: 'premium', id: 'timus_lt_base', cm: 'sjb' },  //Timus-计时/定时
+  'pdfai_app': { name: 'premium', id: 'special_lifetime', cm: 'sjb' },  //ChatPDF
+  'Linearity%20Curve': { name: 'pro', id: 'linearity_curve_pro_yearly_free_trial', cm: 'sja' },  //LinearityCurve-插画/图形处理
+  'TQBrowser': { name: 'pro_lt', id: 'com.tk.client.lifetime', cm: 'sjb' },  //Teak浏览器
+  'AI%C2%A0Chat': { name: 'AI Plus', id: 'ai_plus_gpt_yearly', cm: 'sja' },  //AIChat
+  'Yosum': { name: 'Premium', id: 'yosum_999_1year', cm: 'sja' },  //Yosum  
+  '%E8%B5%84%E6%BA%90%E6%90%AC%E8%BF%90%E5%A4%A7%E5%B8%88': { name: 'SaveTikYoutu_common', id: 'LifetimeSubscription', cm: 'sjb' },//资源搬运大师
+  'DHWaterMarkManager': { name: 'WaterManager_common', id: 'lifetimeVIP_001', cm: 'sjb' },//水印熊
+  'iplayTV':{ name: 'com.ll.btplayer.12', id: 'com.ll.btplayer.12', cm: 'sjb'},//ntPlayer
+  'MaxWallpaper': { name: 'maxwallpaper_common', id: 'super_forever_vip', cm: 'sjb' },  //新鲜壁纸
+  'intervalFlow': { name: 'All Access', id: 'wodtimer_lf', cm: 'sjb' },  //intervalFlow
+  'BORD': { name: 'pro_membership', id: 'bord_plus_2499_lifetime', cm: 'sjb' },  //BORD-照片拓展方形
+  'FRMD': { name: 'all_access', id: 'frmd_plus_999_lifetime', cm: 'sjb' },  //FRMD相机
+  'HRZN': { name: 'pro', id: 'plus_999_lifetime', cm: 'sjb' },  //HRZN-胶片相机
+  'Assembly': { name: 'premium_access', id: 'com.pixite.assembly.1yearlyq', cm: 'sja' },  //Assembly
+  'Flourish': { name: 'Pro', id: 'flourish_9800_1yr_1m0', cm: 'sja' },  //如是记录
+  'metaslip': { name: 'Pro', id: 'ms_lifetime', cm: 'sjb' },  //元思笔记
+  'Pins': { name: 'customer', id: 'do.anh.Pins.Unlock.Standard', cm: 'sja' },  //Pins
+  'Loora': { name: 'Yearly', id: 'yearly_free_ref_10usd_off', cm: 'sja' },  //Loora
+  'PwDrawingPad': { name: 'pro', id: 'com.s132.app.supaintexchange.year', cm: 'sja' },  //全能画板2
+  'OneGrow': { name: 'pro', id: 'com.onenicetech.OneGrow.Lifetime', cm: 'sjb' },  //OneGrow-儿童身高成长测量
+  '%E6%97%B6%E9%97%B4%E8%AE%B0%E5%BD%95': { name: 'pro', id: 'com.bapaws.Hours.lifetime', cm: 'sjb' },  //时间记录
+  'PianoTrainer': { name: 'pro_subscription', id: 'pianotrainer.sub.yearly.pro', cm: 'sja' },  //Pianolytics-学习钢琴
+  'FretTrainer': { name: 'pro_subscription', id: 'frettrainer.sub.yearly.pro', cm: 'sja' },  //Fretonomy-学习指板
+  'Currency': { name: 'plus', id: 'com.jeffreygrossman.currencyapp.iap.plus', cm: 'sja' },  //Currency-汇率查询
+  'TripMemo': { name: 'pro', id: 'com.ningle.dailytracker.lifetime', cm: 'sjb' },  //旅行迹
+  'ShellBean': { name: 'pro', id: 'com.ningle.shellbean.iap.forever', cm: 'sjb' },  //ShellBean-SSH终端服/Linux监控
+  'nPtt': { name: 'vip.yearly', id: 'app.nextptt.vip1.yearly', cm: 'sja' },  //nPtt
+  'MagicTiles3': { name: 'VIP', id: 'com.pianoidols.vipsub.year.06', cm: 'sja' },  //MagicTiles3-音乐游戏
+  'Airmail': { name: 'Airmail Premium', id: 'Airmail_iOS_Yearly_P', cm: 'sja' },  //Airmail
+  'ScreenRecordCase': { name: 'Premium', id: 'me.fandong.ScreenRecordCase.Ultra', cm: 'sjb' },  //屏幕套壳
+  'opusvpn': { name: 'pro', id: 'yearly_discount', cm: 'sja' },  //Opus-VPN
+  'ip_tv_react_native': { name: 'Single', id: 'opus.lifetime', cm: 'sjb' },  //Opus-IPTV
+  'Atomic': { name: 'pro', id: 'ht_lifetime1', cm: 'sjb' },  //Atomic
+  'QingLong': { name: 'Premium', id: 'qinglong_premium', cm: 'sjb' },  //青龙面板
+  'timetrack.io': { name: 'atimelogger-premium-plus', id: 'ttio_premium_plus', cm: 'sjb' },  //aTimeloggerPro-时间记录
+  'Video%20Teleprompter': { name: 'videoPremium', id: 'com.joeallenpro.videoteleprompter.upgrade.yearly_a', cm: 'sja' },  //Video Teleprompter
+  'FoJiCam': { name: 'ProVersionLifeTime', id: 'com.uzero.cn.fojicam.life2', cm: 'sjb' },  //LimiCam-胶片相机
+  'FruitMinder': { name: 'Premium', id: 'com.bartozo.FruitMinder.lifetime', cm: 'sjb' },  //FruitMinder-水果提醒
+  'PDF_convertor': { name: 'VIP', id: 'com.pdf.convertor.forever', cm: 'sjb' },  //PDF转换器
+  'rewritingText': { name: 'AIGrammercheckerProAccess', id: 'sv.aigrammerchecker.com.lifetime', cm: 'sjb' },  //AI Grammar
+  'ShellBoxKit': { name: 'pro', id: 'ShellBoxKit.Lifetime', cm: 'sjb' },  //CareServer-服务器监控
+  'IDM': { name: 'premium', id: 'sub_yearly_idm', cm: 'sja' },  //IDM-下载
+  'Whisper': { name: 'all_features', id: 'whisperai_80_y', cm: 'sja' },  //Whisper
+  'Shapy': { name: 'premium', id: 'com.blake.femalefitness.subscription.yearly', cm: 'sja' },  //Shapy-健身
+  'Carbon-iOS': { name: 'pro', id: 'carbon.unlockall', cm: 'sjb' },  //Carbon-碳
+  '%E6%89%8B%E6%8C%81%E5%BC%B9%E5%B9%95': { name: 'Pro access', id: 'com.tech.LedScreen.VIPALL', cm: 'sjb' },  //手持弹幕
+  '%E8%AF%AD%E9%9F%B3%E8%AE%A1%E7%AE%97%E5%99%A8': { name: 'Pro access', id: 'com.tech.counter.All', cm: 'sjb' },  //语音计算器
+  '%E7%BE%8E%E5%A6%86%E6%97%A5%E5%8E%86': { name: 'Pro access', id: 'com.tech.Aula.VIPALL', cm: 'sjb' },  //美妆日历
+  'LiveWallpaper': { name: 'Pro access', id: 'com.tech.LiveWallpaper.ALL', cm: 'sjb' },  //动态壁纸
+  'Chat%E7%BB%83%E5%8F%A3%E8%AF%AD': { name: 'Pro access', id: 'com.tech.AiSpeak.All', cm: 'sjb' },  //Chat练口语
+  'Calflow': { name: 'pro', id: 'kike.calflow.pro.lifetime', cm: 'sjb' },  //Calflow
+  'dtdvibe': { name: 'pro', id: 'com.dtd.aroundu.life', cm: 'sjb' },  //Dtd Sounds-睡眠白噪音
+  'Clipboard': { name: 'Premium', id: 'Premium_0_99_1M_1MFree', cm: 'sja' },  //Clipboard-剪贴板
+  'Hi%E8%AE%BA%E5%9D%9B/69': { name: 'plus', id: 'plus_yearly', cm: 'sja' },  //Hi论坛
+  'AnimeArt': { name: 'AnimeArt.Gold', id: 'WaifuArt.Lifetime', cm: 'sjb' },  //Anime Waifu-AI
+  'LiveCaption': { name: 'Plus', id: 'rc_0400_1m', cm: 'sja' },  //iTranscreen-屏幕/游戏翻译
+  'EraseIt': { name: 'ProVersionLifeTime', id: 'com.uzero.cn.eraseit.premium1.fromyear', cm: 'sjb' },  //Smoothrase-AI擦除照片中任何物体
+  'MusicPutty': { name: 'pro_version', id: 'mp_3599_1y', cm: 'sja' },  //MusicPutty-音乐黏土
+  'SleepDown': { name: 'Pro', id: 'pro_student_0926', cm: 'sjb' },  //StaySleep-熬夜助手
+  'PhotoRoom': { name: 'pro', id: 'com.background.pro.yearly', cm: 'sja' },  //PhotoRoom
+  'Bg%20Remover': { name: 'Premium', id: 'net.kaleidoscope.cutout.premium1', cm: 'sja' },  //Bg Remover+
+  'Sex%20Actions': { name: 'Premium Plus', id: 'ru.sexactions.subscriptionPromo1', cm: 'sja' },  //情侣性爱游戏-Sex Actions
+  'reader': { name: 'vip2', id: 'com.valo.reader.vip2.year', cm: 'sja' },  //读不舍手
+  'StarFocus': { name: 'pro', id: 'com.gsdyx.StarFocus.nonConsumable.forever', cm: 'sjb' },  //星垂专注
+  'StarDiary': { name: 'pro', id: 'com.gsdyx.StarDiary.nonConsumable.forever', cm: 'sjb' },  //星垂日记
+  'CountDuck': { name: 'premium', id: 'Lifetime', cm: 'sjb' },  //倒数鸭
+  'wordswag': { name: 'pro', id: 'Pro_Launch_Monthly', cm: 'sja' },  //WordSwag
+  'LockFlow': { name: 'unlimited_access', id: 'lf_00.00_lifetime', cm: 'sjb' },  //LockFlow-锁屏启动
+  'TextMask': { name: 'pro', id: 'tm_lifetime', cm: 'sjb' },  //TextMask
+  '%E5%96%B5%E7%BB%84%E4%BB%B6': { name: 'MiaoWidgetPro', id: 'MiaoLifeTime', cm: 'sjb' },  //喵组件
+  'Chatty': { name: 'pro', id: 'chatty.yearly.1', cm: 'sja' },  //Chatty.AI
+  'ImagineAI': { name: 'pro', id: 'artistai.yearly.1', cm: 'sja' },  //ImagineAI
+  'Langster': { name: 'Premium', id: 'com.langster.universal.lifetime', cm: 'sjb' },  //Langster-学习外语
+  'VoiceAI': { name: 'Special Offer', id: 'voiceannualspecial', cm: 'sjb' },  //VoiceAI-配音
+  'Rootd': { name: 'pro', id: 'subscription_lifetime', cm: 'sjb' },  //Rootd-情绪引导
+  'MusicMate': { name: 'premium', id: 'mm_lifetime_68_premium', cm: 'sjb' },  //MusicMate-音乐
+  'AIKeyboard': { name: 'plus_keyboard', id: 'aiplus_keyboard_yearly', cm: 'sja' },  //AIKeyboard键盘
+  'SmartAIChat': { name: 'Premium', id: 'sc_3999_1y', cm: 'sja' },  //SmartAI
+  'AIChat': { name: 'AI Plus', id: 'ai_plus_yearly', cm: 'sja' },  //AIChat
+  'LazyReply': { name: 'lazyReplyYearlySubscription', id: 'com.bokhary.lazyreply.yearlyprosubscription', cm: 'sja' },  //ReplyAssistant键盘
+  'LazyBoard': { name: 'lazyboardPro', id: 'com.bokhary.magicboard.magicboardpro', cm: 'sjb' },  //LazyBoard键盘
+  'PDF%20Viewer': { name: 'sub.pro', id: 'com.pspdfkit.viewer.sub.pro.yearly', cm: 'sja' },  //PDF Viewerr
+  'Joy': { name: 'pro', id: 'com.indiegoodies.Agile.lifetime2', cm: 'sjb' },  //Joy AI
+  'AnkiPro': { name: 'Premium', id: 'com.ankipro.app.lifetime', cm: 'sjb' },  //AnkiPro
+  'SharkSMS': { name: 'VIP', id: 'com.gaapp.sms.permanently', cm: 'sjb' },  //鲨鱼短信
+  'EncryptNote': { name: 'Pro', id: 'com.gaapp.2019note.noAds', cm: 'sjb' },  //iNotes私密备忘录
+  'One4WallSwiftUI': { name: 'lifetime', id: 'lifetime_key', cm: 'sjb' },  //One4Wall
+  'Pigment': { name: 'pro', id: 'com.pixite.pigment.1yearS', cm: 'sja' },  //色调-Pigment
+  'GradientMusic': { name: 'Pro', id: 'com.gradient.vision.new.music.one.time.79', cm: 'sjb' },  //GradientMusic音乐
+  'iBody': { name: 'Pro', id: 'com.tickettothemoon.bodyfilter.one.time.purchase', cm: 'sjb' },  //BodyFilter
+  'Persona': { name: 'unlimited', id: 'com.tickettothemoon.video.persona.one.time.purchase', cm: 'sjb' },  //Persona-修饰脸部与相机
+  'easy_chart': { name: 'unlock all', id: 'qgnjs_2', cm: 'sja' },  //快速图表
+  'Snipd': { name: 'premium', id: 'snipd_premium_1y_7199_trial_2w_v2', cm: 'sja' },  //Snipd播客
+  'Tide%20Guide': { name: 'Tides+', id: 'TideGuidePro_Lifetime_Family_149.99', cm: 'sjb' },  //Tide Guide潮汐
+  'Gear': { name: 'subscription', id: 'com.gear.app.yearly', cm: 'sja' },  //Gear浏览器
+  'Aisten': { name: 'pro', id: 'aisten_pro', cm: 'sjb' },  //Aisten-播客学英语
+  'ASKAI': { name: 'pro', id: 'askai_pro', nameb: 'pro_plan', idb: 'token_pro_plan', cm: 'sjb' },  //ASKAI
+  'Subtrack': { name: 'pro', id: 'com.mohitnandwani.subtrack.subtrackpro.family', cm: 'sjb' },  //Subtrack
+  'shipian-ios': { name: 'vipOffering', id: 'shipian_25_forever', cm: 'sjb' },  //诗片
+  'My%20Time': { name: 'Pro', id: 'ninja.fxc.mytime.pro.lifetime', cm: 'sjb' },  //我的时间
+  'LUTCamera': { name: 'ProVersionLifeTime', id: 'com.uzero.funforcam.lifetimepurchase', cm: 'sjb' },  //方弗相机
+  'Heal%20Clock': { name: 'pro', id: 'com.mad.HealClock.pro', cm: 'sjb' },  //自愈时钟
+  'tiimo': { name: 'full_access', id: 'lifetime.iap', cm: 'sjb' },  //Tiimo-可视化日程
+  'IPTVUltra': { name: 'premium', id: 'com.chxm1023.lifetime', cm: 'sjb' },  //IPTVUltra
+  'Wozi': { name: 'wozi_pro_2023', id: 'wozi_pro_2023', cm: 'sjb' },  //喔知Wozi背单词
+  'Color%20Widgets': { name: 'pro', id: 'cw_1999_1y_3d0', cm: 'sja' },  //Color Widgets小组件
+  'server_bee': { name: 'Pro', id: 'pro_45_lifetime', cm: 'sjb' },  //serverbee终端监控管理
+  'MyPianist': { name: 'pro', id: 'com.collaparte.mypianist.pro.yearly', cm: 'sja' },  //MyPianist乐谱
+  'ProCam': { name: 'pro', id: 'pro_lifetime', cm: 'sjb' },  //ProCam相机
+  'Drops': { name: 'premium', id: 'forever_unlimited_time_discounted_80_int', cm: 'sjb' },  //Drops外语
+  'transmission_ui': { name: 'Premium', id: '200002', cm: 'sjb' },  //Transmission服务器
+  'fastdiet': { name: 'premium', id: 'com.happy.fastdiet.forever', cm: 'sjb' },  //小熊轻断食
+  'money_manager': { name: 'premium', id: 'com.happy.money.forever', cm: 'sjb' },  //小熊记账
+  'Overdue': { name: 'Pro', id: '1', cm: 'sjb' },  //我的物品
+  'Ledger': { name: 'Pro', id: 'com.lifetimeFamily.pro', cm: 'sjb' },  //Pure账本
+  'WeNote': { name: 'pro', id: 'Yearly', cm: 'sja' },  //Emote
+  'Scelta': { name: 'pro', id: 'SceltaProLifetime', cm: 'sjb' },  //Scelta
+  '%E5%87%B9%E5%87%B8%E5%95%A6%E6%9F%A5%E5%A6%86': { name: 'Pro access', id: 'com.smartitfarmer.MakeUpAssistant.UNLIMITED', cm: 'sjb' },  //upahead
+  'PM4': { name: 'pro', id: 'pm4_pro_1y_2w0', cm: 'sja' },  //Obscura
+  'Project%20Delta': { name: 'rc_entitlement_obscura_ultra', id: 'com.benricemccarthy.obscura4.obscura_ultra_sub_annual', cm: 'sja' },  //Obscura
+  'Zettelbox': { name: 'Power Pack', id: 'powerpack_permanent_1', cm: 'sjb' },  //Zettelbox
+  'Packr': { name: 'Pro', id: 'com.jeremieleroy.packr.premiumyearly', cm: 'sja' },  //派克
+  'muoyu': { name: 'pro', id: 'com.metaorder.muoyu.prolifetime.12', cm: 'sjb' },  //摸鱼
+  '%E7%BF%BB%E9%A1%B5%E6%97%B6%E9%92%9F': { name: 'Pro access', id: 'com.douwan.aiclock.ALL', cm: 'sjb' },  //翻页时钟
+  '%E7%A7%A9%E5%BA%8F%E6%97%B6%E9%92%9F': { name: 'lifetime', id: 'com.metaorder.orderclocko.lifetime', cm: 'sjb' },  //秩序时钟
+  '%E7%A7%A9%E5%BA%8F%E7%9B%AE%E6%A0%87': { name: 'pro', id: 'com.metaorder.OKRTomato.vip.supremacy', cm: 'sjb' },  //秩序目标
+  '%E4%BA%BA%E7%94%9F%E6%B8%85%E5%8D%95': { name: 'premium', id: 'com.metaorder.lifelist.premium', cm: 'sjb' },  //人生清单
+  'Vision': { name: 'promo_3.0', id: 'vis_lifetime_3.0_promo', cm: 'sja' },  //Vision
+  'TruthOrDare': { name: 'premium', id: 'truth_or_dare_premium_monthly', cm: 'sja' },  //真心话大冒险
+  'HurtYou': { name: 'premium', id: 'hurtyou_199_1y', cm: 'sja' },  //一起欺词
+  '%E4%BF%A1%E6%81%AF%E8%AE%A1%E7%AE%97': { name: 'pro', id: 'informaticcalculations.pro.lifetime', cm: 'sjb' },  //信息计算
+  'Context_iOS': { name: 'Context Pro', id: 'ctx_sub_1y_sspai_preorder_angel', cm: 'sja' },  //Context
+  'Structured': { name: 'pro', id: 'today.structured.pro', cm: 'sjb' },  //Structured
+  '%E7%9B%B8%E6%9C%BA%E5%8D%B0': { name: 'Unlimited', id: 'com.dujinke.CameraMark.Unlimited', cm: 'sjb' },  //相机印
+  'HTTPBot': { name: 'pro', id: 'com.behindtechlines.HTTPBot.prounlock', cm: 'sjb' },  //Httpbot抓包工具
+  'Counter': { name: 'Unlimited', id: 'com.dujinke.Counter.Unlimited', cm: 'sjb' },  //计数器
+  '%E7%8C%9C%E6%96%87%E5%AD%97': { name: 'Unlimited', id: 'com.dujinke.Chinese.Unlimited', cm: 'sjb' },  //猜文字
+  '%E4%BC%8A%E6%91%A9%E5%9F%BA': { name: 'Unlimited', id: 'com.dujinke.Emoji.Unlimited', cm: 'sjb' },  //伊摩基
+  '%E5%8D%85%E5%85%AD%E9%97%AE': { name: 'Unlimited', id: 'com.dujinke.36Questions.Unlimited', cm: 'sjb' },  //卅六问
+  'MinimalDiary': { name: 'pro', id: 'com.mad.MinimalDiary.lifetime', cm: 'sjb' },  //极简日记
+  'Zen%20Flip%20Clock': { name: 'pro', id: 'com.mad.zenflipclock.iap.buymeacoffee', cm: 'sjb' },  //极简时钟
+  'Transfer': { name: 'pro', id: 'transfer_ios_premium_year_2022_1', cm: 'sja' },  //WeTransfer
+  'Collect': { name: 'pro', id: 'com.revenuecat.product.yearly.ios', cm: 'sja' },  //Collect收集
+  'Paper': { name: 'pro', id: 'com.fiftythree.paper.credit', cm: 'sjb' },  //Paper
+  'Ape': { name: 'pro-iOS', id: 'ape.lifetime', cm: 'sjb' },  //Sharp AI
+  'Boar': { name: 'pro-iOS', id: 'boar.yearly', cm: 'sja' },  //Erase Objects
+  'Loopsie': { name: 'pro-iOS', id: 'com.reader.autoRenewableSeason', cm: 'sja' },  //Loopsie
+  'MySticker': { name: 'mysticker premium', id: 'com.miiiao.MySticker.lifetime', cm: 'sjb' },  //Tico-贴抠
+  'Rec': { name: 'rec.paid', id: 'rec.paid.onetime', cm: 'sjb' },  //Rec相机
+  'Photon': { name: 'photon.paid', id: 'photon.paid.onetime', cm: 'sjb' },  //Photon相机
+  'OneTodo': { name: 'pro', id: 'onetodo_lifetime', cm: 'sjb' },  //OneTodo
+  'OneFlag': { name: 'pro', id: 'oneflag_lifetime', cm: 'sjb' },  //OneList
+  'OneClear': { name: 'pro', id: 'oneclear_lifetime', cm: 'sjb' },  //OneClear透明小组件
+  'OneScreen': { name: 'pro', id: 'onescreen_lifetime', cm: 'sjb' },  //OneScreen截图带壳
+  'Photomator': { name: 'pixelmator_photo_pro_access', id: 'pixelmator_photo_lifetime_v1', cm: 'sjb' },  //Photomator
+  'Endel': { name: 'pro', id: 'Lifetime', cm: 'sjb' },  //Endel
+  'Drowsy': { name: 'Pro', id: 'Drowsy_Life', cm: 'sjb' },  //解压动画
+  'Thiro': { name: 'pro', id: 'atelerix_pro_lifetime', cm: 'sjb' },  //Thiro
+  'Stress': { name: 'StressWatch Pro', id: 'stress_membership_lifetime', cm: 'sjb' },  //StressWatch压力自测提醒
+  'Worrydolls': { name: 'magicmode', id: 'magicmode', cm: 'sjb' },  //解忧娃娃
+  'Echo': { name: 'PLUS', id: 'com.LEMO.LemoFm.plus.lifetime.l3', cm: 'sjb' },  //LEMO FM睡眠
+  'Falendar': { name: 'Falendar+', id: 'falendar_68_life', cm: 'sjb' },  //Falendar日历
+  '%E8%BD%A6%E7%A5%A8%E7%A5%A8': { name: 'vip+watch_vip', id: 'eticket_with_watch_life_a', cm: 'sjb' },  //车票票
+  'iRead': { name: 'vip', id: 'com.vip.forever_1', cm: 'sjb' },  //已阅
+  'MOZE': { name: 'MOZE_PREMIUM_SUBSCRIPTION', id: 'MOZE_PRO_SUBSCRIPTION_YEARLY_BASIC', cm: 'sja' },  //MOZE记账
+  'app/112': { name: 'Pro', id: 'com.wengqianshan.friends.pro', cm: 'sjb' },  //贴心记
+  'app/38': { name: 'Pro', id: 'com.wengqianshan.diet.pro', cm: 'sjb' },  //饭卡
+  'MatrixClock': { name: 'Premium', id: 'com.lishaohui.matrixclock.lifetimesharing', cm: 'sjb' },  //MatrixClocca-矩阵时钟
+  'SalesCat': { name: 'Premium', id: 'com.lishaohui.salescat.lifetime', cm: 'sjb' },  //SalesCat-RevenueCat客户端
+  'MoneyThings': { name: 'Premium', id: 'com.lishaohui.cashflow.lifetime', cm: 'sjb' },  //Money Things记账
+  'ChatGPTApp': { name: 'Advanced', id: 'com.palligroup.gpt3.yearlyyy', cm: 'sja' },  //ChatAI-中文智能聊天机器人
+  'Journal_iOS': { name: 'PRO', id: 'com.pureformstudio.diary.yearly_2022_promo', cm: 'sja' },  //Diarly日历
+  'LemonKeepAccounts': { name: 'VIP', id: 'lm_1_1month', cm: 'sja' },  //旺财记账
+  'mizframa': { name: 'premium', id: 'mf_20_lifetime2', cm: 'sjb' },  //Mizframa
+  'EasyClicker': { name: 'pro', id: 'easyclicker.premium.discount2', cm: 'sjb' },  //自动点击器
+  'ImageX': { name: 'imagex.pro.ios', id: 'imagex.pro.ios.lifetime', cm: 'sjb' },  //Imagex
+  'image_upscaler': { name: 'pro', id: 'yearly_sub_pro', cm: 'sja' },  //Lens智图
+  'DayPoem': { name: 'Pro Access', id: 'com.uzero.poem.month1', cm: 'sja' },  //西江诗词
+  'Personal%20Best': { name: 'pro', id: 'PersonalBestPro_Yearly', cm: 'sja' },  //Personal Best-运动报告
+  'Darkroom': { name: 'co.bergen.Darkroom.entitlement.allToolsAndFilters', id: 'co.bergen.Darkroom.product.forever.everything', cm: 'sja' },  //Darkroom-照片/视频编辑
+  'CardPhoto': { name: 'allaccess', id: 'CardPhoto_Pro', cm: 'sjb' },  //卡片馆-相框与复古胶片
+  'OneWidget': { name: 'allaccess', id: 'com.onewidget.vip', cm: 'sjb' },  //奇妙组件-轻巧桌面小组件
+  'PinPaper': { name: 'allaccess', id: 'Paper_Lifetime', cm: 'sjb' },  //InPaper-创作壁纸
+  'Cookie': { name: 'allaccess', id: 'app.ft.Bookkeeping.lifetime', cm: 'sjb' },  //Cookie-记账
+  'MyThings': { name: 'pro', id: 'xyz.jiaolong.MyThings.pro.infinity', cm: 'sjb' },  //物品指南
+  '%E4%BA%8B%E7%BA%BF': { name: 'pro', id: 'xyz.jiaolong.eventline.pro.lifetime', cm: 'sjb' },  //事线-串事成线
+  'PipDoc': { name: 'pro', id: 'pipdoc_pro_lifetime', cm: 'sjb' },  //PipDoc-画中画
+  'Facebook': { name: 'pro', id: 'fb_pro_lifetime', cm: 'sjb' },  //MetaSurf-社交网站浏览器
+  'Free': { name: 'pro', id: 'appspree_pro_lifetime', cm: 'sjb' },  //Appspree
+  'Startodo': { name: 'pro', id: 'pro_lifetime', cm: 'sjb' },  //Startodo
+  'Browser': { name: 'pro', id: 'pro_zoomable', cm: 'sjb' },  //Zoomable-桌面浏览器
+  'YubePiP': { name: 'pro', id: 'piptube_pro_lifetime', cm: 'sjb' },  //YubePiP-油管播放器
+  'PrivateBrowser': { name: 'pro', id: 'private_pro_lifetime', cm: 'sjb' },  //Brovacy-隐私浏览器
+  'Photo%20Cleaner': { name: 'premium', id: 'com.monocraft.photocleaner.lifetime.3', cm: 'sjb' },  //照片清理Photo Cleaner
+  'bluredit': { name: 'Premium', id: 'net.kaleidoscope.bluredit.premium1', cm: 'sja' },  //bluredit-模糊视频&照片
+  'TouchRetouchBasic': { name: 'premium', id: 'tr5_yearlysubsc_15dlrs_2', cm: 'sja' },  //TouchRetouch-水印清理
+  'TimeFinder': { name: 'pro', id: 'com.lukememet.TimeFinder.Premium', cm: 'sjb' },  //TimeFinder-提醒App
+  'Alpenglow': { name: 'newPro', id: 'ProLifetime', cm: 'sja' },  //Alpenglow-日出日落
+  'Decision': { name: 'com.nixwang.decision.entitlements.pro', id: 'com.nixwang.decision.pro.annual', cm: 'sja' },  //小决定-选择困难症克星
+  'ElementNote': { name: 'pro', id: 'com.soysaucelab.element.note.lifetime', cm: 'sjb' },  //ElementNote-笔记&PDF
+  'Noto%20%E7%AC%94%E8%AE%B0': { name: 'pro', id: 'com.lkzhao.editor.full', cm: 'sja' },  //Noto-笔记
+  'Tangerine': { name: 'Premium', id: 'PremiumMonthly', cm: 'sja' },  //Tangerine-习惯与情绪追踪
+  'Email%20Me': { name: 'premium', id: 'ventura.media.EmailMe.premium.lifetime', cm: 'sjb' },  //Email Me-给自己发邮箱
+  'Brass': { name: 'pro', id: 'brass.pro.annual', cm: 'sja' },  //Brass-定制图标&小组件
+  'Happy%3ADays': { name: 'pro', id: 'happy_999_lifetime', cm: 'sjb' },  //Happy:Days-小组件App
+  'Aphrodite': { name: 'all', id: 'com.ziheng.aphrodite.onetime', cm: 'sjb' },  //Aphrodite-啪啪啪日历
+  'apollo': { name: 'all', id: 'com.ziheng.apollo.onetime', cm: 'sjb' },  //Apollo-记录影视
+  'widget_art': { name: 'all', id: 'com.ziheng.widgetart.onetime', cm: 'sjb' },  //WidgetArt-自定义小组件
+  'audiomack-iphone': { name: 'Premium1', id: 'com.audiomack.premium.2022', cm: 'sja' },  //AudioMack-音乐App
+  'MallocVPN': { name: 'IOS_PRO', id: 'malloc_yearly_vpn', cm: 'sja' },  //Malloc VPN
+  'WhiteCloud': { name: 'allaccess', id: 'wc_pro_1y', cm: 'sja' },  //白云天气
+  'Spark': { name: 'premium', id: 'spark_5999_1y_1w0', cm: 'sja' },  //Spark_Mail-邮箱管理
+  'Grow': { name: 'grow.pro', id: 'grow_lifetime', cm: 'sjb' },  //Grow-健康运动
+  'NotePlan': { name: 'premium', id: 'co.noteplan.subscription.personal.annual', cm: 'sja' },  //NotePlan
+  'vibes': { name: 'patron', id: 'com.andyworks.vibes.yearlyPatron', cm: 'sja' },  //NotBoring-Vibes个性化音乐
+  'simple-weather': { name: 'patron', id: 'com.andyworks.weather.yearlyPatron', cm: 'sja' },  //NotBoring-天气
+  'streaks': { name: 'patron', id: 'com.andyworks.weather.yearlyPatron', cm: 'sja' },  //NotBoring-习惯
+  'andyworks-calculator': { name: 'patron', id: 'com.andyworks.weather.yearlyPatron', cm: 'sja' },  //NotBoring-计算器
+  'simple-timer': { name: 'patron', id: 'com.andyworks.weather.yearlyPatron', cm: 'sja' },  //NotBoring-时间
+  'Harukong': { name: 'premium', id: 'com.bluesignum.harukong.lifetime.premium', cm: 'sjb' },  //天天豆-日记应用
+  'UTC': { name: 'Entitlement.Pro', id: 'tech.miidii.MDClock.subscription.month', cm: 'sja' },  //花样文字
+  'OffScreen': { name: 'Entitlement.Pro', id: 'tech.miidii.offscreen.pro', cm: 'sjb' },  //OffScreen-自律番茄钟
+  '%E8%B0%9C%E5%BA%95%E9%BB%91%E8%83%B6': { name: 'Entitlement.Pro', id: 'tech.miidii.MDVinyl.lifetime', cm: 'sja' },  //谜底黑胶
+  '%E8%B0%9C%E5%BA%95%E6%97%B6%E9%92%9F': { name: 'Entitlement.Pro', id: 'tech.miidii.MDClock.pro', cm: 'sjb' },  //目标地图
+  '%E7%9B%AE%E6%A0%87%E5%9C%B0%E5%9B%BE': { name: 'pro', id: 'com.happydogteam.relax.lifetimePro', cm: 'sjb' },  //
+  'APTV': { name: 'Pro', id: 'com.kimen.aptvpro.lifetime', cm: 'sjb' },  //APTV
+  'Seamless': { name: 'Seamless.Pro', id: 'net.shinystone.Seamless.Pro', cm: 'sjb' },  //Seamless同步
+  'Anybox': { name: 'pro', id: 'cc.anybox.Anybox.annual', cm: 'sja' },  //Anybox-跨平台书签管理
+  'ScannerPro': { name: 'plus', id: 'com.chxm1024.premium.yearly', cm: 'sja' },  //Scanner Pro-文档扫描
+  'Pillow': { name: 'premium', id: 'com.neybox.pillow.premium.year', cm: 'sja' },  //Pillow-睡眠周期跟踪
+  'Taio': { name: 'full-version', id: 'taio_1651_1y_2w0_std_v2', cm: 'sja' },  //Tiao
+  'CPUMonitor': { name: 'Pro', id: 'com.mars.cpumonitor_removeAd', cm: 'sjb' },  //手机硬件管家
+  'totowallet': { name: 'all', id: 'com.ziheng.totowallet.onetimepurchase', cm: 'sjb' },  //图图记账
+  '1Blocker': { name: 'premium', id: 'blocker.ios.iap.lifetime', cm: 'sjb' },  //1Blocker-广告拦截
+  'VSCO': { name: 'pro', id: 'vscopro_global_5999_annual_7D_free', cm: 'sja' }  //VSCO-照片与视频编辑
+};
+
+if (typeof $response == "undefined") {
+  delete headers["x-revenuecat-etag"];
+  delete headers["X-RevenueCat-ETag"];
+  chxm1024.headers = headers;
+} else if (chxm1023 && chxm1023.subscriber) {
+  chxm1023.subscriber.subscriptions = chxm1023.subscriber.subscriptions || {};
+  chxm1023.subscriber.entitlements = chxm1023.subscriber.entitlements || {};
+  let name,nameb,ids,idb,data;
+  for (const src of [list, bundle]) {
+    for (const i in src) {
+      const test = src === list ? ua : bundle_id;
+      if (new RegExp(`^${i}`, `i`).test(test)) {
+      if (src[i].cm.indexOf('sja') != -1) { data = {  "purchase_date" : "2023-09-09T09:09:09Z",  "expires_date" : "2099-09-09T09:09:09Z" };  } else if (src[i].cm.indexOf('sjb') != -1) { data = {  "purchase_date" : "2023-09-09T09:09:09Z" }; }
+      ids = src[i].id;name = src[i].name;idb = src[i].idb;nameb = src[i].nameb;
+      break;
+      }
+    }
+  }
+  if (!name || !ids) {
+    data = {  "purchase_date" : "2023-09-09T09:09:09Z",  "expires_date" : "2099-09-09T09:09:09Z" };
+    name = 'pro';
+    ids = 'com.chxm1023.pro';
+  }
+  chxm1023.subscriber.entitlements[name] = Object.assign({}, data, { product_identifier: ids });
+  if (typeof nameb !== 'undefined' && nameb !== null) {
+    chxm1023.subscriber.entitlements[nameb] = Object.assign({}, data, { product_identifier: idb });
+  }
+  const subData = Object.assign({},data,{  "Author": "chxm1023",  "Telegram": "https://t.me/chxm1023",  "warning": "仅供学习，禁止转载或售卖",  "original_purchase_date": "2023-09-09T09:09:09Z",  "store": "app_store",  "ownership_type": "PURCHASED"  });
+  chxm1023.subscriber.subscriptions[ids] = subData;
+  if (typeof idb !== 'undefined' && idb !== null) {
+    chxm1023.subscriber.subscriptions[idb] = subData;
+  }
+  chxm1024.body = JSON.stringify(chxm1023);
+  console.log('已操作成功🎉🎉🎉\n叮当猫の分享频道: https://t.me/chxm1023');
+}
+
+$done(chxm1024);
