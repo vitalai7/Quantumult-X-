@@ -28,8 +28,8 @@ DOMAIN-SUFFIX,workers.dev,PROXY
 DOMAIN-SUFFIX,cfl.io,PROXY
 DOMAIN-SUFFIX,cf-cdn.net,PROXY
 DOMAIN-SUFFIX,cloudflaressl.com,PROXY
-DOMAIN,engage.nanocat.cloud,策略选择
-DOMAIN-SUFFIX,nanocat.cloud,策略选择
+DOMAIN,engage.nanocat.cloud,PROXY
+DOMAIN-SUFFIX,nanocat.cloud,PROXY
 
 # =========================================================
 # 规则集 2: IP-CIDR (IP 地址段匹配)
