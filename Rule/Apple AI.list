@@ -1,0 +1,20 @@
+# NAME: Apple AI
+# AUTHOR: vitalai7
+
+# iCloud Private Relay 私有中继全部强制直连（绕过代理）
+DOMAIN-SUFFIX,apple-relay.apple.com,DIRECT
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com,DIRECT
+DOMAIN-SUFFIX,apple-relay.cloudflare.com,DIRECT
+DOMAIN-SUFFIX,gateway.icloud.com,DIRECT
+DOMAIN-SUFFIX,guzzoni.apple.com,DIRECT
+DOMAIN-SUFFIX,cp4.cloudflare.com,DIRECT
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,DIRECT
+DOMAIN-SUFFIX,apps.mzstatic.com,DIRECT
+
+# 更全的苹果私有中继域名（2024-2025 最新）
+DOMAIN-SUFFIX,mask.icloud.com,DIRECT
+DOMAIN-SUFFIX,mask-h2.icloud.com,DIRECT
+DOMAIN-SUFFIX,mask-api.icloud.com,DIRECT
+DOMAIN-SUFFIX,icloud-content.com,DIRECT
+DOMAIN-KEYWORD,mask,DIRECT
+DOMAIN-KEYWORD,icloud.com.cn,DIRECT
